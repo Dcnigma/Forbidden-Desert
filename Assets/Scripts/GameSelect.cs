@@ -10,7 +10,7 @@ public class GameSelect : MonoBehaviour {
 		//build Index way SceneManager.LoadScene(1)
 		// Name way SceneManager.LoadScene("game")
 		//Better way for using build index using Que's setup in buildsettings
-		SceneManager.LoadScene(2);
+		SceneManager.LoadScene(7);
 	}
 	public void treeplayers ()
 	{

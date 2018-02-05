@@ -22,28 +22,20 @@ public class Addtitles : MonoBehaviour {
 	[SerializeField]
 	private GameObject storm;
 
-
+	[SerializeField]
+	private GameObject btn2;
 	//25 Titles must be load 1 start 1 storm 3 water 20 titles
 	void Awake(){
 
-		for (int i=0; i< 20; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
+		for (int i=0; i< 10; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
 		{
 			GameObject button = Instantiate (btn);
 			button.name = "" + i;
 			button.transform.SetParent (puzzleField, false);
 		}
-	//	for (int i=0; i< 1; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
-	//	{
-	//		GameObject button = Instantiate (water);
-	//		button.name = "" + i;
-	//		button.transform.SetParent (puzzleField, false);
-	//	}
-//		for (int i=0; i< 5; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
-//		{
-//			GameObject button = Instantiate (btn);
-//			button.name = "" + i;
-//			button.transform.SetParent (puzzleField, false);
-//		}
+
+
+
 
 		for (int i=0; i< 1; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
 		{
@@ -51,51 +43,28 @@ public class Addtitles : MonoBehaviour {
 			button.name = "" + i;
 			button.transform.SetParent (puzzleField, false);
 		}
-//		for (int i=0; i< 1; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
-//		{
-//			GameObject button = Instantiate (btn);
-//			button.name = "" + i;
-//			button.transform.SetParent (puzzleField, false);
-//		}
-
-
+//		
 		for (int i=0; i< 3; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
 		{
 			GameObject button = Instantiate (water);
 			button.name = "" + i;
 			button.transform.SetParent (puzzleField, false);
 		}
-//		for (int i=0; i< 3; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
-//		{
-//			GameObject button = Instantiate (btn);
-//			button.name = "" + i;
-//			button.transform.SetParent (puzzleField, false);
-//		}
+//		
 		for (int i=0; i< 1; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
 		{
 			GameObject button = Instantiate (start);
 			button.name = "" + i;
 			button.transform.SetParent (puzzleField, false);
+
 		}
-	
-//	for (int i=0; i< 2; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
-//	{
-//		GameObject button = Instantiate (btn);
-//		button.name = "" + i;
-//		button.transform.SetParent (puzzleField, false);
-//	}
-	//	for (int i=0; i< 1; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
-	//	{
-	//		GameObject button = Instantiate (water);
-	//		button.name = "" + i;
-	//		button.transform.SetParent (puzzleField, false);
-	//	}
-//		for (int i=0; i< 3; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
-//		{
-//			GameObject button = Instantiate (btn);
-//			button.name = "" + i;
-//			button.transform.SetParent (puzzleField, false);
-//		}
+		for (int i=0; i< 10; i++)  // I want to have fewer or more buttons, I have changed here, but nothing changed.
+		{
+			GameObject button = Instantiate (btn2);
+			button.name = "" + i;
+			button.transform.SetParent (puzzleField, false);
+		}
+
 	}
 
 }
